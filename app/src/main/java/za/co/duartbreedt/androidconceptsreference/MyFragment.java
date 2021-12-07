@@ -16,6 +16,7 @@ public class MyFragment extends Fragment {
 
     private FragmentMyBinding binding;
 
+    // Fragments HAVE to have an empty constructor
     public MyFragment() {
         super(R.layout.fragment_my);
     }
@@ -23,15 +24,23 @@ public class MyFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
+        // Inflate layout
         binding = FragmentMyBinding.inflate(inflater, container, false);
 
-        // Create view programmatically and add it to the view hierarchy
+        // Create text view programmatically
         TextView newTextView = new TextView(requireContext());
+
         newTextView.setText("A programmatically created view in my fragment...");
-        newTextView.setLayoutParams(new ViewGroup.LayoutParams(
+
+        // Set the width and height
+        ViewGroup.LayoutParams layoutParams = new ViewGroup.LayoutParams(
             ViewGroup.LayoutParams.WRAP_CONTENT,
             ViewGroup.LayoutParams.WRAP_CONTENT
-        ));
+        );
+        newTextView.setLayoutParams(layoutParams);
+
+        // Add it to the view hierarchy
         binding.myFragmentRootView.addView(newTextView);
 
         return binding.getRoot();

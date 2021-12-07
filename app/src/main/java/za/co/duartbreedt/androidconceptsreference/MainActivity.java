@@ -9,10 +9,6 @@ import za.co.duartbreedt.androidconceptsreference.databinding.ActivityMainBindin
 
 public class MainActivity extends AppCompatActivity {
 
-    // TODO: Custom View
-    // TODO: Explicit inflation for a fragment
-    // TODO: Recycler view
-
     private ActivityMainBinding binding;
 
     @Override
@@ -26,10 +22,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        binding.buttonNavigateToRecyclerActivity.setOnClickListener(clickedView -> navigateToRecyclerActivity());
+        binding.buttonPrimary.setOnClickListener(clickedView -> onPrimaryButtonClicked());
+
+        setupMyCustomView();
     }
 
-    private void navigateToRecyclerActivity() {
-        startActivity(new Intent(this, RecyclerActivity.class));
+    private void setupMyCustomView() {
+        binding.myCustomView.setPrimaryText("My Custom View");
+        binding.myCustomView.setSecondaryText("Yay!");
+    }
+
+    private void onPrimaryButtonClicked() {
+        startActivity(new Intent(this, PusheenDetailsActivity.class));
     }
 }
