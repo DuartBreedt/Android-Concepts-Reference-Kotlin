@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Android Concepts Reference</string>
+
+    <!-- Main Activity -->
+    <string name="button_goToRecyclerView">Go to recycler view!</string>
+
+    <!-- My Fragment -->
+    <string name="myFragment_primaryText">This is my fragment!</string>
+
+    <!-- Recycler Activity -->
+    <string name="recyclerActivity_primaryText">Recycler View Fragment!</string>
+
 </resources>
