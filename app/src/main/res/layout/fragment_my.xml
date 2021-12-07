@@ -22,6 +22,6 @@
         android:textColor="@color/white"
         android:textSize="18sp"
 
-        android:text="@string/myFragment_primaryText" />
+        android:text="@string/myFragment_text_primary" />
 
 </LinearLayout>

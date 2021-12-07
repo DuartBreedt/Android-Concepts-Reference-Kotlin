@@ -15,6 +15,6 @@ public class PusheenViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void setPusheen(String pusheen) {
-        binding.primaryText.setText(pusheen);
+        binding.textPrimary.setText(pusheen);
     }
 }

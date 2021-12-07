@@ -12,7 +12,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/primaryText"
+        android:id="@+id/text_primary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -22,7 +22,7 @@
 
 
     <TextView
-        android:id="@+id/secondaryText"
+        android:id="@+id/text_secondary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 

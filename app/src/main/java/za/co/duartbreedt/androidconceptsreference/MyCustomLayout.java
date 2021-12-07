@@ -29,10 +29,10 @@ public class MyCustomLayout extends LinearLayout {
     }
 
     public void setPrimaryText(String text) {
-        binding.primaryText.setText(text);
+        binding.textPrimary.setText(text);
     }
 
     public void setSecondaryText(String text) {
-        binding.secondaryText.setText(text);
+        binding.textSecondary.setText(text);
     }
 }

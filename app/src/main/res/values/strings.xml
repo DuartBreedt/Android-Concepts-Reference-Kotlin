@@ -5,9 +5,9 @@
     <string name="button_goToRecyclerView">Go to recycler view!</string>
 
     <!-- My Fragment -->
-    <string name="myFragment_primaryText">This is my fragment!</string>
+    <string name="myFragment_text_primary">This is my fragment!</string>
 
     <!-- Recycler Activity -->
-    <string name="recyclerActivity_primaryText">Recycler View Fragment!</string>
+    <string name="recyclerActivity_text_primary">Recycler View Fragment!</string>
 
 </resources>
