@@ -1,4 +1,4 @@
-package za.co.duartbreedt.androidconceptsreference;
+package za.co.duartbreedt.androidconceptsreference.calculator;
 
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;

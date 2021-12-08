@@ -1,9 +1,8 @@
-package za.co.duartbreedt.androidconceptsreference;
+package za.co.duartbreedt.androidconceptsreference.employee;
 
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import java.io.IOException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -11,6 +10,8 @@ import java.util.concurrent.TimeUnit;
 
 import retrofit2.Call;
 import retrofit2.Response;
+import za.co.duartbreedt.androidconceptsreference.employee.domain.Employee;
+import za.co.duartbreedt.androidconceptsreference.networking.RetrofitClient;
 
 public class EmployeeViewModel extends ViewModel {
 

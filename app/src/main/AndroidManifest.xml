@@ -29,11 +29,11 @@
             android:exported="false" />
 
         <activity
-            android:name=".CalculatorActivity"
+            android:name=".calculator.CalculatorActivity"
             android:exported="false" />
 
         <activity
-            android:name=".EmployeeActivity"
+            android:name=".employee.EmployeeActivity"
             android:exported="false" />
 
     </application>

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
-    tools:context=".CalculatorActivity">
+    tools:context=".calculator.CalculatorActivity">
 
     <TextView
         android:id="@+id/text_result"

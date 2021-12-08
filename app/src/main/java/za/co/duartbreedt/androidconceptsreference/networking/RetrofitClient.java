@@ -1,4 +1,4 @@
-package za.co.duartbreedt.androidconceptsreference;
+package za.co.duartbreedt.androidconceptsreference.networking;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

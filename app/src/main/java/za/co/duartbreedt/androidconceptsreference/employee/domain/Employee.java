@@ -1,4 +1,4 @@
-package za.co.duartbreedt.androidconceptsreference;
+package za.co.duartbreedt.androidconceptsreference.employee.domain;
 
 import java.io.Serializable;
 

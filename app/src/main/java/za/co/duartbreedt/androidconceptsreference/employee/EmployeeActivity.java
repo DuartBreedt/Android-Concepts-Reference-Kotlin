@@ -1,4 +1,4 @@
-package za.co.duartbreedt.androidconceptsreference;
+package za.co.duartbreedt.androidconceptsreference.employee;
 
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +9,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import retrofit2.Response;
 import za.co.duartbreedt.androidconceptsreference.databinding.ActivityEmployeeBinding;
+import za.co.duartbreedt.androidconceptsreference.employee.domain.Employee;
 
 public class EmployeeActivity extends AppCompatActivity {
 

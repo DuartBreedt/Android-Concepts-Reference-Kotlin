@@ -7,7 +7,9 @@ import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 
+import za.co.duartbreedt.androidconceptsreference.calculator.CalculatorActivity;
 import za.co.duartbreedt.androidconceptsreference.databinding.ActivityMainBinding;
+import za.co.duartbreedt.androidconceptsreference.employee.EmployeeActivity;
 
 public class MainActivity extends AppCompatActivity {
 
