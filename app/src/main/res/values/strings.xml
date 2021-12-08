@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Android Concepts Reference</string>
 
+    <!-- Main Activity -->
+    <string name="button_goToAnotherActivity">Go to another activity</string>
+
     <!-- My Fragment -->
     <string name="myFragment_text_primary">This is my fragment!</string>
 

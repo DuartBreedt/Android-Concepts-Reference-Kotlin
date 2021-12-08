@@ -10,7 +10,7 @@ public class MainViewModel extends ViewModel {
         Log.i("BOOTCAMP", "The MainViewModel was created!");
     }
 
-    private String username;
+    private String username = "NO_USERNAME";
 
     public String getUsername() {
         return username;
