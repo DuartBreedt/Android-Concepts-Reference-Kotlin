@@ -34,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        binding.buttonPrimary.setOnClickListener(clickedView -> onPrimaryButtonClicked());
+        binding.buttonGoToAnother.setOnClickListener(clickedView -> onGoToAnotherButtonClicked());
+        binding.buttonCalculator.setOnClickListener(clickedView -> onCalculatorButtonClicked());
     }
 
     @Override
@@ -44,7 +45,11 @@ public class MainActivity extends AppCompatActivity {
         Log.i("BOOTCAMP", "MainActivity destroyed!");
     }
 
-    private void onPrimaryButtonClicked() {
+    private void onGoToAnotherButtonClicked() {
         startActivity(new Intent(this, AnotherActivity.class));
+    }
+
+    private void onCalculatorButtonClicked() {
+        startActivity(new Intent(this, CalculatorActivity.class));
     }
 }

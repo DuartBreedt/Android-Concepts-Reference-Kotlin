@@ -22,13 +22,24 @@
         android:name="za.co.duartbreedt.androidconceptsreference.MyFragment" />
 
     <Button
-        android:id="@+id/button_primary"
+        android:id="@+id/button_goToAnother"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="@string/button_goToAnotherActivity"
+        android:text="@string/mainActivity_button_goToAnotherActivity"
 
         app:layout_constraintTop_toBottomOf="@id/fragment_container_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/mainActivity_button_goToCalculator"
+
+        app:layout_constraintTop_toBottomOf="@id/button_goToAnother"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

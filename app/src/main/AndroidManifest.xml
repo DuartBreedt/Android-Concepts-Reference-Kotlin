@@ -26,6 +26,10 @@
             android:name=".AnotherActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".CalculatorActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

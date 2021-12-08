@@ -2,9 +2,16 @@
     <string name="app_name">Android Concepts Reference</string>
 
     <!-- Main Activity -->
-    <string name="button_goToAnotherActivity">Go to another activity</string>
+    <string name="mainActivity_button_goToAnotherActivity">Go to another activity</string>
+    <string name="mainActivity_button_goToCalculator">Go to calculator</string>
 
     <!-- My Fragment -->
     <string name="myFragment_text_primary">This is my fragment!</string>
+
+    <!-- Calculator Activity -->
+    <string name="calculatorActivity_button_calculateResult">Calculate Result!</string>
+    <string name="calculatorActivity_resultFormat" formatted="true">Result: %s</string>
+    <string name="calculatorActivity_emptyResult">Result: …</string>
+    <string name="calculatorActivity_hint_numberInput">Enter number to calculate</string>
 
 </resources>
