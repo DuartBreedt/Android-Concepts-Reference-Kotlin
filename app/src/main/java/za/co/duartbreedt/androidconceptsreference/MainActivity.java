@@ -12,7 +12,7 @@ import za.co.duartbreedt.androidconceptsreference.databinding.ActivityMainBindin
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
-    private MainViewModel viewModel;
+    private UsernameViewModel viewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
 
-        viewModel = new ViewModelProvider(this).get(MainViewModel.class);
+        viewModel = new ViewModelProvider(this).get(UsernameViewModel.class);
 
         // Set data in the view model
         viewModel.setUsername("Hennie Brink");

@@ -11,7 +11,7 @@ import za.co.duartbreedt.androidconceptsreference.databinding.ActivityAnotherBin
 public class AnotherActivity extends AppCompatActivity {
 
     private ActivityAnotherBinding binding;
-    private MainViewModel viewModel;
+    private UsernameViewModel viewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,7 @@ public class AnotherActivity extends AppCompatActivity {
 
         binding = ActivityAnotherBinding.inflate(getLayoutInflater());
 
-        viewModel = new ViewModelProvider(this).get(MainViewModel.class);
+        viewModel = new ViewModelProvider(this).get(UsernameViewModel.class);
 
         setContentView(binding.getRoot());
     }

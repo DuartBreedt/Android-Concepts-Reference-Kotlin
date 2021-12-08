@@ -4,10 +4,10 @@ import android.util.Log;
 
 import androidx.lifecycle.ViewModel;
 
-public class MainViewModel extends ViewModel {
+public class UsernameViewModel extends ViewModel {
 
-    public MainViewModel() {
-        Log.i("BOOTCAMP", "The MainViewModel was created!");
+    public UsernameViewModel() {
+        Log.i("BOOTCAMP", "The UsernameViewModel was created!");
     }
 
     private String username = "NO_USERNAME";
@@ -24,6 +24,6 @@ public class MainViewModel extends ViewModel {
     protected void onCleared() {
         super.onCleared();
 
-        Log.i("BOOTCAMP", "The MainViewModel was cleared!");
+        Log.i("BOOTCAMP", "The UsernameViewModel was cleared!");
     }
 }

@@ -15,11 +15,22 @@ import za.co.duartbreedt.androidconceptsreference.databinding.FragmentMyBinding;
 public class MyFragment extends Fragment {
 
     private FragmentMyBinding binding;
-    private MainViewModel viewModel;
+    private UsernameViewModel viewModel;
 
     // Fragments HAVE to have an empty constructor
     public MyFragment() {
         super(R.layout.fragment_my);
+    }
+
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        // If the owner is set to `this` then the VM won't be the same as the one created in the activity.
+        //  Instead, a new instance will be created.
+        // Replace `requireActivity()` with `this` and observe the logs
+        viewModel = new ViewModelProvider(requireActivity()).get(UsernameViewModel.class);
     }
 
     @Nullable
@@ -28,11 +39,6 @@ public class MyFragment extends Fragment {
 
         // Inflate layout
         binding = FragmentMyBinding.inflate(inflater, container, false);
-
-        // If the owner is set to this then the VM won't be the same as the one created in the activity. Instead a new instance will be created.
-        // Replace `requireActivity()` with `this` and observe the logs
-        viewModel = new ViewModelProvider(requireActivity()).get(MainViewModel.class);
-
         return binding.getRoot();
     }
 
