@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding.buttonGoToAnother.setOnClickListener(clickedView -> onGoToAnotherButtonClicked());
         binding.buttonCalculator.setOnClickListener(clickedView -> onCalculatorButtonClicked());
+        binding.buttonEmployee.setOnClickListener(clickedView -> onEmployeeButtonClicked());
     }
 
     @Override
@@ -51,5 +52,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void onCalculatorButtonClicked() {
         startActivity(new Intent(this, CalculatorActivity.class));
+    }
+
+    private void onEmployeeButtonClicked() {
+        startActivity(new Intent(this, EmployeeActivity.class));
     }
 }

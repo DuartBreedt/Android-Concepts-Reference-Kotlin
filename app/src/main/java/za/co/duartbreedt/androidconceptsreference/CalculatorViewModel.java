@@ -13,7 +13,7 @@ public class CalculatorViewModel extends ViewModel {
     public MutableLiveData<Integer> resultObservable = new MutableLiveData<>();
 
     // Create service to run tasks (Runnable) off the UI Thread
-    private ExecutorService executor = new ThreadPoolExecutor(
+    private final ExecutorService executor = new ThreadPoolExecutor(
         1,               // Minimum number of threads even if they are idling
         10,          // Max number of threads before throwing a RejectedExecutionException
         1000L,          // Time before killing idle threads

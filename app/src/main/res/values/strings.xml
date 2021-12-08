@@ -4,6 +4,7 @@
     <!-- Main Activity -->
     <string name="mainActivity_button_goToAnotherActivity">Go to another activity</string>
     <string name="mainActivity_button_goToCalculator">Go to calculator</string>
+    <string name="mainActivity_button_goToEmployee">Go to employee</string>
 
     <!-- My Fragment -->
     <string name="myFragment_text_primary">This is my fragment!</string>
@@ -13,5 +14,8 @@
     <string name="calculatorActivity_resultFormat" formatted="true">Result: %s</string>
     <string name="calculatorActivity_emptyResult">Result: …</string>
     <string name="calculatorActivity_hint_numberInput">Enter number to calculate</string>
+
+    <!-- Employee Activity -->
+    <string name="employeeActivity_button_getEmployee">Get Employee</string>
 
 </resources>
