@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Android Concepts Reference</string>
+
+    <!-- My Fragment -->
+    <string name="myFragment_text_primary">This is my fragment!</string>
+
 </resources>
