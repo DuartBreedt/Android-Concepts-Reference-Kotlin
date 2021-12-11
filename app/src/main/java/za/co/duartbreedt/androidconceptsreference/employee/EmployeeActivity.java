@@ -7,33 +7,25 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import retrofit2.Response;
 import za.co.duartbreedt.androidconceptsreference.databinding.ActivityEmployeeBinding;
-import za.co.duartbreedt.androidconceptsreference.employee.domain.Employee;
+import za.co.duartbreedt.androidconceptsreference.services.employee.domain.Employee;
 
 public class EmployeeActivity extends AppCompatActivity {
 
     private ActivityEmployeeBinding binding;
     private EmployeeViewModel viewModel;
 
-    Observer<Response<Employee>> employeeObserver = (employeeResponse) -> {
+    Observer<Employee> employeeObserver = (employeeResponse) -> {
 
-        if (!employeeResponse.isSuccessful() || employeeResponse.body() == null) {
+        // Hide loader once data is returned
+        binding.loader.setVisibility(View.GONE);
 
-            // Handle HTTP error...
+        // Show the employee's name once data is returned
+        binding.textPrimary.setVisibility(View.VISIBLE);
 
-        } else {
-
-            // Hide loader once data is returned
-            binding.loader.setVisibility(View.GONE);
-
-            // Show the employee's name once data is returned
-            binding.textPrimary.setVisibility(View.VISIBLE);
-
-            // Set the primary text to the returned employee's name
-            String name = employeeResponse.body().getName();
-            binding.textPrimary.setText(name);
-        }
+        // Set the primary text to the returned employee's name
+        String name = employeeResponse.getData().getFirstName() + " " + employeeResponse.getData().getLastName();
+        binding.textPrimary.setText(name);
     };
 
     @Override

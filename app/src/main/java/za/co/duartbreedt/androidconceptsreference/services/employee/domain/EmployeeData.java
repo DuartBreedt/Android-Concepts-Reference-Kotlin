@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 
-public class EmployeeDataDTO implements Serializable {
+public class EmployeeData implements Serializable {
 
     private int id;
 

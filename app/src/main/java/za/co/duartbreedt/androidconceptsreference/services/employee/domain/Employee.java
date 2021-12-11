@@ -2,15 +2,15 @@ package za.co.duartbreedt.androidconceptsreference.services.employee.domain;
 
 import java.io.Serializable;
 
-public class EmployeeDTO implements Serializable {
+public class Employee implements Serializable {
 
-    private EmployeeDataDTO data;
+    private EmployeeData data;
 
-    public EmployeeDataDTO getData() {
+    public EmployeeData getData() {
         return data;
     }
 
-    public void setData(EmployeeDataDTO data) {
+    public void setData(EmployeeData data) {
         this.data = data;
     }
 }
