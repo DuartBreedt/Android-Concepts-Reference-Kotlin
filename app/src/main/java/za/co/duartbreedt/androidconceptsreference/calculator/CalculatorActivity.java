@@ -60,7 +60,7 @@ public class CalculatorActivity extends AppCompatActivity {
 
         // Parse input as a number
         String numberInputString = binding.editTextNumberInput.getText().toString().trim();
-        int number = numberInputString == null || numberInputString.isEmpty() ? 0 : Integer.parseInt(numberInputString);
+        int number = numberInputString.isEmpty() ? 0 : Integer.parseInt(numberInputString);
 
         viewModel.calculate(number);
     }

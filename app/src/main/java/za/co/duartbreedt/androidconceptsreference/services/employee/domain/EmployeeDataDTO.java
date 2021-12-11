@@ -1,10 +1,10 @@
-package za.co.duartbreedt.androidconceptsreference.employee.domain;
+package za.co.duartbreedt.androidconceptsreference.services.employee.domain;
 
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 
-public class EmployeeData implements Serializable {
+public class EmployeeDataDTO implements Serializable {
 
     private int id;
 

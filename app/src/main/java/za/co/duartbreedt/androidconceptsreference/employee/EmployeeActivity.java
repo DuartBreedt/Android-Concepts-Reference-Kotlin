@@ -18,7 +18,7 @@ public class EmployeeActivity extends AppCompatActivity {
 
     Observer<Response<Employee>> employeeObserver = (employeeResponse) -> {
 
-        if(!employeeResponse.isSuccessful()) {
+        if (!employeeResponse.isSuccessful() || employeeResponse.body() == null) {
 
             // Handle HTTP error...
 
@@ -31,7 +31,7 @@ public class EmployeeActivity extends AppCompatActivity {
             binding.textPrimary.setVisibility(View.VISIBLE);
 
             // Set the primary text to the returned employee's name
-            String name = employeeResponse.body().getData().getFirstName() + " " + employeeResponse.body().getData().getLastName();
+            String name = employeeResponse.body().getName();
             binding.textPrimary.setText(name);
         }
     };

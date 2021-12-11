@@ -1,5 +1,6 @@
-package za.co.duartbreedt.androidconceptsreference.networking;
+package za.co.duartbreedt.androidconceptsreference.services;
 
+import okhttp3.MediaType;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -9,4 +10,6 @@ public final class RetrofitClient {
             .baseUrl("https://reqres.in/api/")
             .addConverterFactory(GsonConverterFactory.create())
             .build();
+
+    public static final MediaType JSON_MEDIA_TYPE = MediaType.parse("application/json");
 }

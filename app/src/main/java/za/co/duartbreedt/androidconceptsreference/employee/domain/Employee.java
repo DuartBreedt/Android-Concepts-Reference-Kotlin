@@ -1,16 +1,18 @@
 package za.co.duartbreedt.androidconceptsreference.employee.domain;
 
-import java.io.Serializable;
+public class Employee {
 
-public class Employee implements Serializable {
+    private String name;
 
-    private EmployeeData data;
-
-    public EmployeeData getData() {
-        return data;
+    public Employee(String name) {
+        this.name = name;
     }
 
-    public void setData(EmployeeData data) {
-        this.data = data;
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

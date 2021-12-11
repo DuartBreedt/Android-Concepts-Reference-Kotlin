@@ -8,17 +8,13 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-import retrofit2.Call;
 import retrofit2.Response;
 import za.co.duartbreedt.androidconceptsreference.employee.domain.Employee;
-import za.co.duartbreedt.androidconceptsreference.networking.RetrofitClient;
 
 public class EmployeeViewModel extends ViewModel {
 
-    // Instantiate Retrofit client
-    private EmployeeService service = RetrofitClient.instance.create(EmployeeService.class);
-
     public MutableLiveData<Response<Employee>> employeeObservable = new MutableLiveData<>();
+    private final EmployeeRepository repository = new EmployeeRepository();
 
     // Create service to run tasks (Runnable) off the UI Thread
     private final ExecutorService executor = new ThreadPoolExecutor(
@@ -34,22 +30,10 @@ public class EmployeeViewModel extends ViewModel {
         // Create a new Runnable and execute it
         executor.execute(() -> {
 
-            // Make HTTP request
-            Call<Employee> getEmployeeCall = service.getEmployee(employeeId);
+            Response<Employee> employeeResponse = repository.getEmployee(employeeId);
 
-            try {
-
-                // Prevent the loader from flashing if the response is too quick
-                Thread.sleep(1000L);
-
-                Response<Employee> employeeResponse = getEmployeeCall.execute();
-
-                // Send result into the LiveData stream
-                employeeObservable.postValue(employeeResponse);
-
-            } catch (Exception exception) {
-                // Handle error
-            }
+            // Send result into the LiveData stream
+            employeeObservable.postValue(employeeResponse);
         });
     }
 }
