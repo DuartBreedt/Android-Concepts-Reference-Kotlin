@@ -19,6 +19,7 @@ public class AnotherActivity extends AppCompatActivity {
 
         Log.i("BOOTCAMP", "AnotherActivity Created!");
 
+        // Inflate layout
         binding = ActivityAnotherBinding.inflate(getLayoutInflater());
 
         viewModel = new ViewModelProvider(this).get(UsernameViewModel.class);

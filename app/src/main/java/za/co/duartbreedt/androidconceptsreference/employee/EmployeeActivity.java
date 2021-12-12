@@ -32,6 +32,7 @@ public class EmployeeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // Inflate layout
         binding = ActivityEmployeeBinding.inflate(getLayoutInflater());
 
         viewModel = new ViewModelProvider(this).get(EmployeeViewModel.class);

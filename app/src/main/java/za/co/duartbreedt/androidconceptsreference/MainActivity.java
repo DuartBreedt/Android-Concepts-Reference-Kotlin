@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         Log.i("BOOTCAMP", "MainActivity Created!");
 
+        // Inflate layout
         binding = ActivityMainBinding.inflate(getLayoutInflater());
 
         viewModel = new ViewModelProvider(this).get(UsernameViewModel.class);
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         binding.buttonGoToAnother.setOnClickListener(clickedView -> onGoToAnotherButtonClicked());
         binding.buttonCalculator.setOnClickListener(clickedView -> onCalculatorButtonClicked());
         binding.buttonEmployee.setOnClickListener(clickedView -> onEmployeeButtonClicked());
+        binding.buttonIncrementer.setOnClickListener(clickedView -> onIncrementerButtonClicked());
     }
 
     @Override
@@ -58,5 +60,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void onEmployeeButtonClicked() {
         startActivity(new Intent(this, EmployeeActivity.class));
+    }
+
+    private void onIncrementerButtonClicked() {
+        startActivity(new Intent(this, IncrementerActivity.class));
     }
 }

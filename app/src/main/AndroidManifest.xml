@@ -36,6 +36,10 @@
             android:name=".employee.EmployeeActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".IncrementerActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

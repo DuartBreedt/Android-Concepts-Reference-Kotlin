@@ -5,6 +5,7 @@
     <string name="mainActivity_button_goToAnotherActivity">Go to another activity</string>
     <string name="mainActivity_button_goToCalculator">Go to calculator</string>
     <string name="mainActivity_button_goToEmployee">Go to employee</string>
+    <string name="mainActivity_button_goToIncrementer">Go to incrementer</string>
 
     <!-- My Fragment -->
     <string name="myFragment_text_primary">This is my fragment!</string>

@@ -39,6 +39,7 @@ public class MyFragment extends Fragment {
 
         // Inflate layout
         binding = FragmentMyBinding.inflate(inflater, container, false);
+
         return binding.getRoot();
     }
 
