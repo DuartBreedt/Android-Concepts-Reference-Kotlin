@@ -1,3 +1,15 @@
 <resources>
+
     <string name="app_name">Android Concepts Reference</string>
+
+    <string name="fragmentStarting_text_primary">Starting Fragment</string>
+    <string name="fragmentStarting_button_goToFragmentAWithoutArgs">Go To Fragment A Without Args</string>
+    <string name="fragmentStarting_button_goToFragmentAWithArgs">Go To Fragment A With Args</string>
+
+    <string name="fragmentA_text_primary">Fragment A</string>
+    <string name="fragmentA_button_goToFragmentBWithoutArgs">Go To Fragment B Without Args</string>
+    <string name="fragmentA_button_goToFragmentBWithArgs">Go To Fragment B With Args</string>
+
+    <string name="fragmentB_text_primary">Fragment B</string>
+
 </resources>

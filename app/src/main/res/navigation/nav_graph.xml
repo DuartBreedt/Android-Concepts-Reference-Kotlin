@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startingFragment">
+
+    <!-- Declare every accessible fragment in here and hte fully qualified UI Controller -->
+
+    <fragment
+        android:id="@+id/startingFragment"
+        android:name="za.co.duartbreedt.androidconceptsreference.StartingFragment">
+
+        <action
+            android:id="@+id/action_startingFragment_to_fragmentA"
+            app:destination="@id/fragmentA">
+
+            <!-- Declare typed arguments in action -->
+
+            <argument
+                android:name="USERNAME"
+                app:argType="string" />
+
+            <argument
+                android:name="MESSAGE"
+                app:argType="string" />
+
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentA"
+        android:name="za.co.duartbreedt.androidconceptsreference.AFragment">
+
+        <!-- Duplicate declaration of arguments in order to access the values -->
+
+        <argument
+            android:name="USERNAME"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <argument
+            android:name="MESSAGE"
+            android:defaultValue=""
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentB"
+        android:name="za.co.duartbreedt.androidconceptsreference.BFragment" />
+
+</navigation>
