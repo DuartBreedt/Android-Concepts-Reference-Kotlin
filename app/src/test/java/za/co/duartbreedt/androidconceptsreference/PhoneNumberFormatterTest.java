@@ -24,7 +24,7 @@ public class PhoneNumberFormatterTest {
     @Test
     public void format_numberOnlySupplied_blankNumber_fails() {
         try {
-        PhoneNumberFormatter.format("    ");
+            PhoneNumberFormatter.format("    ");
         } catch (IllegalArgumentException e) {
             assertEquals("Number has to be a valid phone number.", e.getMessage());
         }

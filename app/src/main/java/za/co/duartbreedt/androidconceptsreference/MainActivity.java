@@ -1,6 +1,8 @@
 package za.co.duartbreedt.androidconceptsreference;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,5 +17,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        binding.buttonNavigate.setOnClickListener((View v) -> {
+            startActivity(new Intent(this, NextActivity.class));
+        });
     }
 }
