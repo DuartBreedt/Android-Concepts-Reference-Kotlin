@@ -16,11 +16,6 @@ public class MyFragment extends Fragment {
 
     private FragmentMyBinding binding;
 
-    // Fragments HAVE to have an empty constructor
-    public MyFragment() {
-        super(R.layout.fragment_my);
-    }
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -50,7 +45,8 @@ public class MyFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
 
-        // Always dispose of your bindings if you are caching them!
+        // Always dispose of your bindings if you are caching them on Fragments!
+        // Fragments outlive their views
         binding = null;
     }
 }
