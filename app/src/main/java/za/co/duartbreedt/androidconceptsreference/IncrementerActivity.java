@@ -7,6 +7,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import za.co.duartbreedt.androidconceptsreference.databinding.ActivityIncrementerBinding;
 
+/**
+ * Example of Save Instance State
+ */
 public class IncrementerActivity extends AppCompatActivity {
 
     private ActivityIncrementerBinding binding;
