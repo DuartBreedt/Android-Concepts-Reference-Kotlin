@@ -6,6 +6,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import za.co.duartbreedt.androidconceptsreference.databinding.ActivityMainBinding;
+import za.co.duartbreedt.androidconceptsreference.pusheen.PusheenDetailsActivity;
 
 public class MainActivity extends AppCompatActivity {
 

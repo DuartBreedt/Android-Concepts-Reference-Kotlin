@@ -1,4 +1,4 @@
-package za.co.duartbreedt.androidconceptsreference;
+package za.co.duartbreedt.androidconceptsreference.pusheen;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -14,7 +14,7 @@ public class PusheenAdapter extends RecyclerView.Adapter<PusheenViewHolder> {
 
     private final List<String> data;
 
-    PusheenAdapter(List<String> data) {
+    public PusheenAdapter(List<String> data) {
         this.data = data;
     }
 

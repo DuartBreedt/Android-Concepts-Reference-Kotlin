@@ -1,4 +1,4 @@
-package za.co.duartbreedt.androidconceptsreference;
+package za.co.duartbreedt.androidconceptsreference.pusheen;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;

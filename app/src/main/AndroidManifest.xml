@@ -23,7 +23,7 @@
         </activity>
 
         <activity
-            android:name=".PusheenDetailsActivity"
+            android:name=".pusheen.PusheenDetailsActivity"
             android:exported="false" />
 
     </application>
