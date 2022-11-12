@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         // Set data in the view model
         viewModel.username = "Hennie Brink"
 
-        setContentView(binding!!.root)
+        setContentView(binding?.root)
     }
 
     override fun onStart() {
