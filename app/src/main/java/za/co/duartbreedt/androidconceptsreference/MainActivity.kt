@@ -24,8 +24,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
 
         /**
+         * There are 3 ways to instantiate VMs:
+         * Vanilla, Lazy (AnotherActivity), KTX delegates (MyFragment)
+         *
          * Vanilla way to create view models
-         * Note:You can also use a lazy block with this instantiation in
          */
         viewModel = ViewModelProvider(this)[UsernameViewModel::class.java]
 
@@ -48,8 +50,6 @@ class MainActivity : AppCompatActivity() {
         super.onDestroy()
 
         Log.i("BOOTCAMP", "MainActivity destroyed!")
-
-        binding = null
     }
 
     private fun onGoToAnotherButtonClicked() {
