@@ -7,16 +7,16 @@ import za.co.duartbreedt.androidconceptsreference.services.employee.domain.Emplo
 interface EmployeeService {
 
     @GET("users/{id}")
-    fun getEmployee(@Path("id") employeeId: Int): Response<Employee>
+    suspend fun getEmployee(@Path("id") employeeId: Int): Response<Employee>
 
     @GET("users")
-    fun getEmployees(@Query("tenure") years: Int): Response<Employee>
+    suspend fun getEmployees(@Query("tenure") years: Int): Response<Employee>
 
     @POST("users")
-    fun createEmployee(@Body employee: Employee): Response<Employee>
+    suspend fun createEmployee(@Body employee: Employee): Response<Employee>
 
     @PUT("users/{id}")
-    fun getEmployee(
+    suspend fun getEmployee(
         @Path("id") employeeId: Int,
         @Body employee: Employee
     ): Response<Employee>
