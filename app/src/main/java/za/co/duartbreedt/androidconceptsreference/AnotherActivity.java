@@ -11,6 +11,7 @@ import za.co.duartbreedt.androidconceptsreference.databinding.ActivityAnotherBin
 public class AnotherActivity extends AppCompatActivity {
 
     private ActivityAnotherBinding binding;
+    // TODO Use lazy?
     private UsernameViewModel viewModel;
 
     @Override

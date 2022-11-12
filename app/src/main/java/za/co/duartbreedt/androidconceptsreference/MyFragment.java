@@ -15,6 +15,7 @@ import za.co.duartbreedt.androidconceptsreference.databinding.FragmentMyBinding;
 public class MyFragment extends Fragment {
 
     private FragmentMyBinding binding;
+    // TODO use delegate. Show what the vanilla implementation might look like for equivalent delegate differences
     private UsernameViewModel viewModel;
 
     // Fragments HAVE to have an empty constructor
