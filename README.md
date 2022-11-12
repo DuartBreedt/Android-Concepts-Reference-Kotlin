@@ -1,5 +1,5 @@
 ﻿# Android-Concepts-Reference
-A single repository to learn the basics of Android in Java without all the fluff.
+A single repository to learn the basics of Android in Kotlin without all the fluff.
 
 ## How to use this repository
 - Each branch contains a set of different but related concepts
