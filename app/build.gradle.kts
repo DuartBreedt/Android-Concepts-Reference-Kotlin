@@ -1,5 +1,5 @@
 plugins {
-    id 'com.android.application'
+    id("com.android.application")
 }
 
 android {
@@ -17,10 +17,10 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled = false
+            isMinifyEnabled = false
             proguardFiles(
-                getDefaultProguardFile('proguard-android-optimize.txt'),
-                'proguard-rules.pro'
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
             )
         }
     }
