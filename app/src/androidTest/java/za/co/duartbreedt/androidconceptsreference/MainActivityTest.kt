@@ -15,9 +15,8 @@ import org.junit.runner.RunWith
 class MainActivityTest {
 
     @Rule
-    var activityScenarioRule = ActivityScenarioRule(
-        MainActivity::class.java
-    )
+    @JvmField
+    var activityScenarioRule = ActivityScenarioRule(MainActivity::class.java)
 
     @Test
     fun inputNameAndNavigate() {
