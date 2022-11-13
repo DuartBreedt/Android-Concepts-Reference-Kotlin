@@ -40,14 +40,18 @@ class AFragment : Fragment() {
     override fun onStart() {
         super.onStart()
 
-        // Get the username stored in the bundle by SafeArgs
-        username = AFragmentArgs.fromBundle(arguments).username
+        if (arguments != null) {
 
-        // Get the message stored in the bundle by SafeArgs
-        message = AFragmentArgs.fromBundle(arguments).message
+            // Get the username stored in the bundle by SafeArgs
+            // Note: `requireArguments()` is equivalent to `arguments!!`
+            username = AFragmentArgs.fromBundle(requireArguments()).username
 
-        // Set the secondary text to the stored username and message
-        binding?.textSecondary?.text = "$username - $message"
+            // Get the message stored in the bundle by SafeArgs
+            message = AFragmentArgs.fromBundle(requireArguments()).message
+
+            // Set the secondary text to the stored username and message
+            binding?.textSecondary?.text = "$username - $message"
+        }
 
         // Without args
         binding?.buttonToFragmentBNoArgs?.setOnClickListener {
