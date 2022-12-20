@@ -5,7 +5,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import retrofit2.Response
 import za.co.duartbreedt.androidconceptsreference.mvvm.model.EmployeeRepository
 import za.co.duartbreedt.androidconceptsreference.services.employee.domain.Employee
 

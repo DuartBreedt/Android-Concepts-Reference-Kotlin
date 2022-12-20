@@ -42,6 +42,18 @@ dependencies {
     implementation("com.google.android.material:material:1.6.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
+    // Kotlin fragment extensions
+    implementation("androidx.fragment:fragment-ktx:1.5.4")
+
+    // Kotlin Activity extensions
+    implementation("androidx.activity:activity-ktx:1.6.1")
+
+    // Lifecycle dependencies
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
+
+    // Testing
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.4")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.0")

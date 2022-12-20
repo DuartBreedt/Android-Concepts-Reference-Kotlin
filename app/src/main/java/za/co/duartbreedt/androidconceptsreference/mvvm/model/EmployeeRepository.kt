@@ -5,7 +5,10 @@ import za.co.duartbreedt.androidconceptsreference.services.employee.domain.Emplo
 
 class EmployeeRepository {
 
-    fun getEmployee(employeeId: Int): Employee {
+    suspend fun getEmployee(employeeId: Int): Employee {
+
+        // Business logic
+
         return Employee(EmployeeData(1, "", "", "", ""))
     }
 
