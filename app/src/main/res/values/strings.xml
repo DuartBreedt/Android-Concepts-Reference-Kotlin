@@ -3,4 +3,19 @@
 
     <string name="mainActivity_button_goToEmployee">Go to Employee Activity</string>
     <string name="mainActivity_button_goToProfile">Go to Profile Activity</string>
+    <string name="mainActivity_button_goToEmailList">Go to Email List</string>
+    <string name="mainActivity_button_goToContact">Give us a call!</string>
+    <string name="mainActivity_button_goToFragmentCarousel">Go to Carousel!</string>
+
+    <string name="employeeActivity_button_getEmployee">Get employee</string>
+
+    <string name="profileActivity_button_getEmployee">Get profile</string>
+
+    <string name="emailList_button_viewEmail">View email</string>
+
+    <string name="emailView_primaryText">Email details go here!</string>
+
+    <string name="fragmentCarousel_button_nextFragment">Next Fragment</string>
+    <string name="firstFragment_primaryText">This is the first fragment</string>
+    <string name="secondFragment_primaryText">This is the second fragment</string>
 </resources>

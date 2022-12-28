@@ -11,11 +11,16 @@ class ProfilePresenter(
 
     override fun onFetchProfileClicked(profileId: Int) {
 
+        view.showLoader()
+        view.hideName()
+
         // Get data from the model
         model.getProfile(profileId) { profile: Profile ->
 
             // Set the relevant data on the view
             view.setName(profile.name)
+            view.showName()
+            view.hideLoader()
         }
     }
 

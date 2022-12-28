@@ -1,14 +1,5 @@
-﻿# Android-Concepts-Reference-Kotlin
-A single repository to learn the basics of Android in Kotlin without all the fluff.
+﻿# Patterns, Intents, and Fragment Transactions
 
-## How to use this repository
-- Each branch contains a set of different but related concepts
-- The repository readme describes the details around the concepts in each branch
-- Checkout the relevant branch for more information
+## What's covered?
 
-## Branches
-- `main`
-- `03.UIComponents`
-- `04.StateThreadingAndNetworking`
-- `06.NavigationComponent`
-- `08.Testing`
+- TODO

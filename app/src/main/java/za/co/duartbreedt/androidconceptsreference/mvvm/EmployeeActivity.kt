@@ -6,7 +6,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import za.co.duartbreedt.androidconceptsreference.databinding.ActivityEmployeeBinding
-import za.co.duartbreedt.androidconceptsreference.services.employee.domain.Employee
+import za.co.duartbreedt.androidconceptsreference.mvvm.model.domain.Employee
 
 class EmployeeActivity : AppCompatActivity() {
 

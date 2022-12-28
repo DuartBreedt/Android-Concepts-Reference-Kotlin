@@ -22,6 +22,22 @@
 
         </activity>
 
+        <activity
+            android:name=".mvvm.EmployeeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mvp.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".explicitintents.EmailListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".explicitintents.EmailViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragmentcarousel.FragmentCarouselActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

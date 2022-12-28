@@ -6,7 +6,7 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import za.co.duartbreedt.androidconceptsreference.mvvm.model.EmployeeRepository
-import za.co.duartbreedt.androidconceptsreference.services.employee.domain.Employee
+import za.co.duartbreedt.androidconceptsreference.mvvm.model.domain.Employee
 
 class EmployeeViewModel : ViewModel() {
 

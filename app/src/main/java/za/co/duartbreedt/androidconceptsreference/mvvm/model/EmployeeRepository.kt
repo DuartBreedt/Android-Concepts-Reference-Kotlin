@@ -1,7 +1,7 @@
 package za.co.duartbreedt.androidconceptsreference.mvvm.model
 
-import za.co.duartbreedt.androidconceptsreference.services.employee.domain.Employee
-import za.co.duartbreedt.androidconceptsreference.services.employee.domain.EmployeeData
+import za.co.duartbreedt.androidconceptsreference.mvvm.model.domain.Employee
+import za.co.duartbreedt.androidconceptsreference.mvvm.model.domain.EmployeeData
 
 class EmployeeRepository {
 
@@ -9,7 +9,8 @@ class EmployeeRepository {
 
         // Business logic
 
-        return Employee(EmployeeData(1, "", "", "", ""))
+        // Return data
+        return Employee(EmployeeData(1, "donkey.kong@gmail.com", "Donkey", "Kong", ""))
     }
 
 }

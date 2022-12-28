@@ -6,6 +6,8 @@ interface ProfileContract {
 
     interface View {
         fun setName(name: String)
+        fun hideName()
+        fun showName()
         fun showLoader()
         fun hideLoader()
     }

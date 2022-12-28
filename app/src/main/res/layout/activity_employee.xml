@@ -26,9 +26,6 @@
 
         tools:text="Employee name goes here"
 
-        android:visibility="gone"
-        tools:visibility="visible"
-
         app:layout_constraintBottom_toTopOf="@id/button_getEmployee"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

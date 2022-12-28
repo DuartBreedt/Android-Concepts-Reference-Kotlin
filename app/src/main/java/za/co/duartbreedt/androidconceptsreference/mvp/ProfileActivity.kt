@@ -22,13 +22,21 @@ class ProfileActivity : AppCompatActivity(), ProfileContract.View {
     override fun onStart() {
         super.onStart()
 
-        binding?.buttonGetEmployee?.setOnClickListener {
+        binding?.buttonGetProfile?.setOnClickListener {
             presenter.onFetchProfileClicked(1)
         }
     }
 
     override fun setName(name: String) {
         binding?.textPrimary?.text = name
+    }
+
+    override fun hideName() {
+        binding?.textPrimary?.isVisible = false
+    }
+
+    override fun showName() {
+        binding?.textPrimary?.isVisible = true
     }
 
     override fun showLoader() {

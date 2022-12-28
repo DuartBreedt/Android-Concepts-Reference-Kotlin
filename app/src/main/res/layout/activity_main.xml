@@ -9,18 +9,6 @@
 
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/text_greeting"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:text="Hello World!"
-
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
     <Button
         android:id="@+id/button_employee"
         android:layout_width="wrap_content"
@@ -43,9 +31,44 @@
         android:text="@string/mainActivity_button_goToProfile"
 
         app:layout_constraintTop_toBottomOf="@id/button_employee"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_emailList"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <Button
+        android:id="@+id/button_emailList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/mainActivity_button_goToEmailList"
+
+        app:layout_constraintTop_toBottomOf="@id/button_profile"
+        app:layout_constraintBottom_toTopOf="@id/button_contact"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/mainActivity_button_goToContact"
+
+        app:layout_constraintTop_toBottomOf="@id/button_emailList"
+        app:layout_constraintBottom_toTopOf="@id/button_fragmentCarousel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_fragmentCarousel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/mainActivity_button_goToFragmentCarousel"
+
+        app:layout_constraintTop_toBottomOf="@id/button_contact"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
