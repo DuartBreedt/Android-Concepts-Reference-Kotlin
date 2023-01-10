@@ -8,6 +8,8 @@ import za.co.duartbreedt.androidconceptsreference.databinding.ActivityProfileBin
 class ProfileActivity : AppCompatActivity(), ProfileContract.View {
 
     private var binding: ActivityProfileBinding? = null
+
+    // Instantiate and keep a reference to the Profile presenter
     private val presenter: ProfileContract.Presenter = ProfilePresenter(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {

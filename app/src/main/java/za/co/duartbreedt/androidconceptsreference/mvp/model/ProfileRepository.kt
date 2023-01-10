@@ -20,6 +20,8 @@ class ProfileRepository : ProfileContract.Model {
             // Get data and perform business logic
             val profile = Profile(1, "Slartibartfast")
 
+            // Merge job back with the UI/Main Dispatcher
+            // Note: No IO work should be done in this CoroutineScope.
             withContext(Dispatchers.Main) {
                 // Call callback
                 onComplete(profile)

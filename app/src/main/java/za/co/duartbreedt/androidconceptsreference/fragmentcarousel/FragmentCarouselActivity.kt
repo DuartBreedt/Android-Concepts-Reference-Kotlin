@@ -10,7 +10,11 @@ class FragmentCarouselActivity : AppCompatActivity() {
 
     private var binding: ActivityFragmentCarouselBinding? = null
 
+    // Holds all the possible fragments we can navigate to
+    // Dictionary of fragment class names and the fragment instance
     private val fragmentList: MutableList<Pair<String, Fragment>> = mutableListOf()
+
+    // The currently active fragment
     private var currentFragmentIndex = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,17 +27,18 @@ class FragmentCarouselActivity : AppCompatActivity() {
 
         populateFragmentList()
 
-        binding?.buttonNextFragment?.setOnClickListener { layoutNextFragment() }
+        binding?.buttonNextFragment?.setOnClickListener { layOutNextFragment() }
     }
 
     override fun onStart() {
         super.onStart()
 
-        layoutNextFragment()
+        layOutNextFragment()
     }
 
-    private fun layoutNextFragment() {
-        val currentFragmentPair = fragmentList[currentFragmentIndex % fragmentList.size]
+    private fun layOutNextFragment() {
+        val currentFragmentPair: Pair<String, Fragment> =
+            fragmentList[currentFragmentIndex % fragmentList.size]
 
         supportFragmentManager
             .beginTransaction()

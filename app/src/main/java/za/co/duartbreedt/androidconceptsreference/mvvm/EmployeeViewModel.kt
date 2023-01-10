@@ -20,20 +20,13 @@ class EmployeeViewModel : ViewModel() {
         // Create a new coroutine block
         viewModelScope.launch {
 
-            try {
+            // Prevent the loader from flashing if the response is too quick
+            delay(1000L)
 
-                // Prevent the loader from flashing if the response is too quick
-                delay(1000L)
+            val employeeResponse: Employee = repository.getEmployee(employeeId)
 
-                val employeeResponse: Employee = repository.getEmployee(employeeId)
-
-                // Send result into the LiveData stream
-                employeeObservable.postValue(employeeResponse)
-
-            } catch (exception: Exception) {
-                // Handle exceptions
-                throw RuntimeException("Oops! Something went wrong!", exception)
-            }
+            // Send result into the LiveData stream
+            employeeObservable.postValue(employeeResponse)
         }
     }
 }

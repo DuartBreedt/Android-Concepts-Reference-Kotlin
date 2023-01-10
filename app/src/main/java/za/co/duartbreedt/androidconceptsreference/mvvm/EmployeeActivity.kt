@@ -11,6 +11,8 @@ import za.co.duartbreedt.androidconceptsreference.mvvm.model.domain.Employee
 class EmployeeActivity : AppCompatActivity() {
 
     private var binding: ActivityEmployeeBinding? = null
+
+    // Instantiate and keep a reference to the Employee View Model
     private val viewModel: EmployeeViewModel by viewModels()
 
     private var employeeObserver = Observer { employeeResponse: Employee ->

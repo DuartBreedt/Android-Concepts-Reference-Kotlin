@@ -5,7 +5,7 @@ import za.co.duartbreedt.androidconceptsreference.mvvm.model.domain.EmployeeData
 
 class EmployeeRepository {
 
-    suspend fun getEmployee(employeeId: Int): Employee {
+    fun getEmployee(employeeId: Int): Employee {
 
         // Business logic
 
