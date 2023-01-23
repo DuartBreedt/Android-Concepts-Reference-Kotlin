@@ -12,6 +12,7 @@
 
     <!-- Calculator Activity -->
     <string name="calculatorActivity_button_calculateResult">Calculate Result!</string>
+    <string name="calculatorActivity_button_calculateResultBadly">Calculate Result Badly!</string>
     <string name="calculatorActivity_resultFormat" formatted="true">Result: %s</string>
     <string name="calculatorActivity_emptyResult">Result: …</string>
     <string name="calculatorActivity_hint_numberInput">Enter number to calculate</string>

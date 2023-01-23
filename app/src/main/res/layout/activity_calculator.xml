@@ -44,10 +44,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <ProgressBar
+    <Button
+        android:id="@+id/button_getResultBadly"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:indeterminate="true"
+
+        android:text="@string/calculatorActivity_button_calculateResultBadly"
 
         app:layout_constraintTop_toBottomOf="@id/button_getResult"
         app:layout_constraintStart_toStartOf="parent"

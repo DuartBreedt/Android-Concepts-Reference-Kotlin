@@ -37,6 +37,7 @@ class CalculatorActivity : AppCompatActivity() {
 
         // Setup click listener when "CALCULATE RESULT!" button is clicked
         binding?.buttonGetResult?.setOnClickListener { onGetResultButtonClicked() }
+        binding?.buttonGetResultBadly?.setOnClickListener { onGetResultBadlyButtonClicked() }
     }
 
     override fun onStop() {
@@ -56,5 +57,17 @@ class CalculatorActivity : AppCompatActivity() {
         val number = if (numberInputString.isEmpty()) 0 else numberInputString.toInt()
 
         viewModel.calculate(number)
+    }
+
+    private fun onGetResultBadlyButtonClicked() {
+
+        // Clear result field
+        binding?.textResult?.setText(R.string.calculatorActivity_emptyResult)
+
+        // Parse input as a number
+        val numberInputString = binding?.editTextNumberInput?.text.toString().trim { it <= ' ' }
+        val number = if (numberInputString.isEmpty()) 0 else numberInputString.toInt()
+
+        viewModel.calculateBadly(number)
     }
 }
