@@ -23,8 +23,12 @@ class MainActivityTest {
 
         // MainActivity.java views
         Espresso.onView(withId(R.id.editText_username))
-            .perform(ViewActions.typeText("Steve"), ViewActions.closeSoftKeyboard())
-        Espresso.onView(withId(R.id.button_navigate)).perform(ViewActions.click())
+            .perform(
+                ViewActions.typeText("Steve"),
+                ViewActions.closeSoftKeyboard()
+            )
+        Espresso.onView(withId(R.id.button_navigate))
+            .perform(ViewActions.click())
 
         // NextActivity.java views
         Espresso.onView(withId(R.id.text_greeting))
