@@ -3,7 +3,9 @@ package za.co.duartbreedt.androidconceptsreference.calculator
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import kotlinx.coroutines.*
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 
 class CalculatorViewModel : ViewModel() {
 
@@ -21,8 +23,8 @@ class CalculatorViewModel : ViewModel() {
         }
     }
 
-    fun calculateBadly(number: Int) = runBlocking{
-        launch(Dispatchers.Main) {
+    fun calculateBadly(number: Int) = runBlocking {
+        launch {
             val result = giveMeThisNumberBackButSlower(number)
 
             // Send result into the LiveData stream
