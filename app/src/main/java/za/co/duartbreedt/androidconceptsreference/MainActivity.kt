@@ -25,12 +25,6 @@ class MainActivity : AppCompatActivity() {
         setupMyCustomView()
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-
-        binding = null
-    }
-
     private fun setupMyCustomView() {
 
         binding?.myCustomView?.setPrimaryText("My Custom View")

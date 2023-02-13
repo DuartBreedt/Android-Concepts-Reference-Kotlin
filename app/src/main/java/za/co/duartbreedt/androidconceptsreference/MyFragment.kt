@@ -35,7 +35,7 @@ class MyFragment : Fragment() {
         // Add it to the view hierarchy
         binding?.myFragmentRootView?.addView(newTextView)
 
-        return binding?.getRoot()
+        return binding?.root
     }
 
     override fun onDestroyView() {

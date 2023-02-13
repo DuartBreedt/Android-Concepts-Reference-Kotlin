@@ -16,17 +16,6 @@
 
         android:text="Hello World!"
 
-        app:layout_constraintBottom_toTopOf="@id/text_not_working"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/text_not_working"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        tools:text="Why doesn't this text show?"
-
         app:layout_constraintBottom_toTopOf="@id/fragment_container"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
