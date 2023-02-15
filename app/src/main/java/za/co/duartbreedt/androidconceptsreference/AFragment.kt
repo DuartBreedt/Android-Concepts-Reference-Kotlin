@@ -67,7 +67,7 @@ class AFragment : Fragment() {
              * Navigate to Fragment B using the fragment ID declared in the Nav Graph
              * Navigate with arguments using language features instead of SafeArgs
              */
-            navController.navigate(R.id.fragmentB, bundle(username, message))
+            navController.navigate(R.id.fragmentB, BFragment.bundle(username, message))
         }
     }
 
