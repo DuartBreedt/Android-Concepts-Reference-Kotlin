@@ -9,7 +9,8 @@ data class Plant(
 
     val genus: String,
 
-    val species: String,
-
-    @Ignore val selected: Boolean
-)
+    val species: String
+) {
+    @Ignore
+    val selected: Boolean = false
+}

@@ -9,11 +9,11 @@ import androidx.room.Update
 interface PlantDao {
 
     @Update
-    fun updateAll(vararg plants: Plant)
+    suspend fun updateAll(vararg plants: Plant)
 
     @Insert
-    fun insertAll(vararg plants: Plant)
+    suspend fun insertAll(vararg plants: Plant)
 
     @Delete
-    fun delete(plant: Plant)
+    suspend fun delete(plant: Plant)
 }

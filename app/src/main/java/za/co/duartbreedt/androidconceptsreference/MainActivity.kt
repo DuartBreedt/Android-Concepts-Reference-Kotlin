@@ -2,7 +2,9 @@ package za.co.duartbreedt.androidconceptsreference
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import androidx.room.Room
+import kotlinx.coroutines.launch
 import za.co.duartbreedt.androidconceptsreference.databinding.ActivityMainBinding
 import za.co.duartbreedt.androidconceptsreference.room.AppDatabase
 import za.co.duartbreedt.androidconceptsreference.room.User
@@ -35,13 +37,16 @@ class MainActivity : AppCompatActivity() {
         // Instantiate DAO
         val userDao = db.userDao()
 
-        // Insert entities
-        userDao.insertAll(userOne)
+        lifecycleScope.launch { // coroutine on Main
 
-        // Get all User entities in the DB
-        val users: List<User> = userDao.getAll()
+            // Insert entities
+            userDao.insertAll(userOne)
 
-        // Update UI with all User entities
-        binding.users.text = users.joinToString { "${it.firstName} ${it.lastName}" }
+            // Get all User entities in the DB
+            val users: List<User> = userDao.getAll()
+
+            // Update UI with all User entities
+            binding.users.text = users.joinToString { "${it.firstName} ${it.lastName}" }
+        }
     }
 }
