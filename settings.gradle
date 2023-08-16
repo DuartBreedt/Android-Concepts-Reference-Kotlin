@@ -8,3 +8,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Android Concepts Reference"
 include ':app'
+include ':exampleappmodule'
+include ':examplelibrarymodule'

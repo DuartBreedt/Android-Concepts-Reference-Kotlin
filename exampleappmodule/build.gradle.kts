@@ -1,14 +1,15 @@
 plugins {
     id("com.android.application")
-    id("kotlin-android")
+    id("org.jetbrains.kotlin.android")
 }
 
 android {
+    namespace = "com.example.exampleappmodule"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "za.co.duartbreedt.androidconceptsreference"
-        minSdk = 21
+        applicationId = "com.example.exampleappmodule"
+        minSdk = 26
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
@@ -25,19 +26,16 @@ android {
             )
         }
     }
-
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
-
-    buildFeatures {
-        viewBinding = true
+    kotlinOptions {
+        jvmTarget = "1.8"
     }
 }
 
 dependencies {
-    implementation(project(":examplelibrarymodule"))
 
     implementation(libs.androidx.core)
     implementation(libs.androidx.appcompat)

@@ -1,0 +1,17 @@
+[versions]
+appcompat = "1.6.1"
+ktx = "1.8.0"
+material = "1.5.0"
+constraintlayout = "2.1.3"
+junit = "4.13.2"
+test-ext = "1.1.5"
+test-espresso = "3.5.1"
+
+[libraries]
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-core = { group = "androidx.core", name = "core-ktx", version.ref = "ktx" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout"}
+junit = { group = "junit", name = "junit", version = "4.13.2" }
+google-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-test-ext = { group = "androidx.test.ext", name = "junit", version.ref = "test-ext" }
+androidx-test-espresso = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "test-espresso" }
