@@ -45,6 +45,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
+            android:text="Overwrite me!"
+            app:secondaryText="Don't overwrite me!"
+
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp" />
 

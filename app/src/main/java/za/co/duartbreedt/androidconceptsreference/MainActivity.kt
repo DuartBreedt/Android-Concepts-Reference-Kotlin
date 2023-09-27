@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
     private fun setupMyCustomView() {
 
         binding?.myCustomView?.setPrimaryText("My Custom View")
-        binding?.myCustomView?.setSecondaryText("Yay!")
     }
 
     private fun onPrimaryButtonClicked() {

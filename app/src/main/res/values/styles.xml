@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyCustomLayout.Light" parent="MyCustomLayout">
+        <item name="android:textColor">?attr/primaryTextColor</item>
+        <item name="secondaryTextColor">?attr/primaryTextColor</item>
+        <item name="android:textSize">@dimen/textSize_large</item>
+    </style>
+
+    <style name="MyCustomLayout.Dark" parent="MyCustomLayout">
+        <item name="android:textColor">?attr/primaryTextColor</item>
+        <item name="secondaryTextColor">?attr/primaryTextColor</item>
+    </style>
+
+    <style name="MyCustomLayout">
+        <item name="android:textSize">@dimen/textSize_medium</item>
+        <item name="secondaryTextSize">@dimen/textSize_medium</item>
+    </style>
+
+</resources>

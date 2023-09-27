@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Theme attribute for primary text color -->
+    <attr name="primaryTextColor" type="color" />
+
+    <!-- Theme attribute for default style provided by the theme -->
+    <attr name="myCustomLayout" type="reference" />
+
+    <!-- Custom view attributes -->
+    <declare-styleable name="MyCustomLayout">
+        <attr name="android:text" />
+        <attr name="android:textSize" />
+        <attr name="android:textColor" />
+        <attr name="secondaryText" format="string" />
+        <attr name="secondaryTextSize" format="dimension" />
+        <attr name="secondaryTextColor" format="color" />
+    </declare-styleable>
+
+</resources>
