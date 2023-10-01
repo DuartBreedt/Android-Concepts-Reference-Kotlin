@@ -1,6 +1,7 @@
 package za.co.duartbreedt.androidconceptsreference
 
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import za.co.duartbreedt.androidconceptsreference.databinding.ActivityMainBinding
@@ -12,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        Log.i("BOOP", "onCreate")
+        Log.i("BOOP", "onCreate ${savedInstanceState?.getString("BOOP")}")
 
         binding = ActivityMainBinding.inflate(layoutInflater)
 
@@ -35,6 +36,14 @@ class MainActivity : AppCompatActivity() {
         super.onPause()
 
         Log.i("BOOP", "onPause")
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState.putString("BOOP", "Bye cruel world!")
+
+        Log.i("BOOP", "onSaveInstanceState")
+
+        super.onSaveInstanceState(outState)
     }
 
     override fun onStop() {
