@@ -54,11 +54,13 @@ dependencies {
     implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0")
 
     // KTOR
-    implementation("io.ktor:ktor-client-core:2.0.0")
-    implementation("io.ktor:ktor-client-android:2.0.0")
-    implementation("io.ktor:ktor-serialization-kotlinx-json:2.0.0")
-    implementation("io.ktor:ktor-client-content-negotiation:2.0.0")
-    implementation("io.ktor:ktor-client-logging-jvm:2.0.0")
+    val ktor_version = "2.0.0"
+
+    implementation("io.ktor:ktor-client-core:$ktor_version")
+    implementation("io.ktor:ktor-client-android:$ktor_version")
+    implementation("io.ktor:ktor-serialization-kotlinx-json:$ktor_version")
+    implementation("io.ktor:ktor-client-content-negotiation:$ktor_version")
+    implementation("io.ktor:ktor-client-logging-jvm:$ktor_version")
 
 
     testImplementation("junit:junit:4.13.2")
