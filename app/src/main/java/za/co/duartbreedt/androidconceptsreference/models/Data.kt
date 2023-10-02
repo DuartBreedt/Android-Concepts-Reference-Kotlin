@@ -1,4 +1,4 @@
-package za.co.duartbreedt/androidconceptsreference.models
+package za.co.duartbreedt.androidconceptsreference.models
 
 import kotlinx.serialization.Serializable
 

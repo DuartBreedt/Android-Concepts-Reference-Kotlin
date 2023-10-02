@@ -3,7 +3,7 @@ package za.co.duartbreedt.androidconceptsreference.ktor
 import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.request.*
-import za.co.duartbreedt.Data
+import za.co.duartbreedt.androidconceptsreference.models.Data
 
 class DataService(private val httpClient: HttpClient) {
 

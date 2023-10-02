@@ -7,8 +7,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 import retrofit2.create
-import za.co.duartbreedt.Data
 import za.co.duartbreedt.androidconceptsreference.ktor.KtorFactory
+import za.co.duartbreedt.androidconceptsreference.models.Data
 import za.co.duartbreedt.androidconceptsreference.retrofit.DataService as RetrofitDataService
 import za.co.duartbreedt.androidconceptsreference.ktor.DataService as KtorDataService
 import za.co.duartbreedt.androidconceptsreference.retrofit.RetrofitFactory

@@ -4,8 +4,8 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
-import za.co.duartbreedt.Data
 import za.co.duartbreedt.androidconceptsreference.databinding.ActivityMainBinding
+import za.co.duartbreedt.androidconceptsreference.models.Data
 
 class MainActivity : ComponentActivity() {
 
