@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 
@@ -34,7 +33,8 @@
 
     <fragment
         android:id="@+id/fragmentA"
-        android:name="za.co.duartbreedt.androidconceptsreference.AFragment">
+        android:name="za.co.duartbreedt.androidconceptsreference.AFragment"
+        tools:layout="@layout/fragment_a">
 
         <!-- Duplicate declaration of arguments in order to access the values -->
 
@@ -52,6 +52,14 @@
 
     <fragment
         android:id="@+id/fragmentB"
-        android:name="za.co.duartbreedt.androidconceptsreference.BFragment" />
+        android:name="za.co.duartbreedt.androidconceptsreference.BFragment"
+        tools:layout="@layout/fragment_b"/>
+
+    <activity
+        android:id="@+id/secondActivity"
+        android:name="za.co.duartbreedt.androidconceptsreference.SecondActivity"
+        tools:layout="@layout/activity_second" />
+
+    <include app:graph="@navigation/checkout_nav_graph" />
 
 </navigation>

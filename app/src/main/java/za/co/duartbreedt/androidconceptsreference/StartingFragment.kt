@@ -57,6 +57,14 @@ class StartingFragment : Fragment() {
 
             navController.navigate(directions)
         }
+
+        binding?.buttonToSecondActivity?.setOnClickListener{
+            navController.navigate(R.id.secondActivity)
+        }
+
+        binding?.buttonToCheckout?.setOnClickListener{
+            navController.navigate(R.id.checkout_nav_graph)
+        }
     }
 
     override fun onDestroyView() {
